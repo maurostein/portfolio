@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#navigation {
+  height: 1000px;
+}
+
+.section {
+  height: 1000px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
