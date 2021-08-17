@@ -1,10 +1,16 @@
 // variables navigation
 $bg-img-person:#233c6d;
-$color-nav: #496baf;
-$color-hover: #ff5252;
-$color-hover-txt: azure;
-$color-nav-txt: #ccdcfd;
+$col-nav: #496baf;
+$col-hover: #ff5252;
+$col-hover-txt: azure;
+$col-nav-txt: #ccdcfd;
 
+@mixin circle($tam) {
+  width: $tam;
+  height: $tam;
+  border-radius: $tam / 2;
+  overflow: hidden;
+}
 
 :root {
   font-size: 100%;
@@ -16,6 +22,7 @@ html {
 
 * {
   margin: 0;
+  padding: 0;
 } 
 
 h1 {
@@ -23,14 +30,14 @@ h1 {
 }  
 
 nav {
- background-color: $color-nav; 
+ background-color: $col-nav; 
 text-align:left;
 }
 
 nav a {
   font-family: 'Bebas Neue';
   font-size: 1.6em;
-  color: $color-nav-txt;
+  color: $col-nav-txt;
   border: rgb(202,202,202) solid 1px;
   padding: 10px;
   padding-left: 30px;
@@ -40,8 +47,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color:$color-hover;
-  color: $color-hover-txt;
+  background-color:$col-hover;
+  color: $col-hover-txt;
 }
 
 nav i {
@@ -61,13 +68,13 @@ nav i {
   font-size: 2.6em;
   padding: 0px;
   text-align: center;
-  color: $color-hover; 
+  color: $col-hover; 
 } 
 
-
 #img01 {
-  border-radius: 50%;
-  width: 50%;
+  @include circle(40vw)
+  // border-radius: 50%;
+  // width: 50%;
 }
 
 #title {

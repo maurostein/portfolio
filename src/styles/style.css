@@ -8,6 +8,7 @@ html {
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -57,8 +58,10 @@ nav i {
 }
 
 #img01 {
-  border-radius: 50%;
-  width: 50%;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 20vw;
+  overflow: hidden;
 }
 
 #title {
