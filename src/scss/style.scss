@@ -1,3 +1,11 @@
+// variables navigation
+$bg-img-person:#233c6d;
+$color-nav: #496baf;
+$color-hover: #ff5252;
+$color-hover-txt: azure;
+$color-nav-txt: #ccdcfd;
+
+
 :root {
   font-size: 100%;
 }
@@ -15,14 +23,14 @@ h1 {
 }  
 
 nav {
- background-color: rgb(73, 107, 175); 
+ background-color: $color-nav; 
 text-align:left;
 }
 
 nav a {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-size: 1.6em;
-  color: rgb(204, 220, 253);
+  color: $color-nav-txt;
   border: rgb(202,202,202) solid 1px;
   padding: 10px;
   padding-left: 30px;
@@ -32,8 +40,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color:#ff5252;
-  color: azure;
+  background-color:$color-hover;
+  color: $color-hover-txt;
 }
 
 nav i {
@@ -42,7 +50,7 @@ nav i {
 }
 
 .bild01 {
-  background-color:rgb(35, 60, 109);
+  background-color: $bg-img-person;
   padding-top: 8%; 
   padding-bottom: 3%;
   text-align: center;
@@ -53,7 +61,7 @@ nav i {
   font-size: 2.6em;
   padding: 0px;
   text-align: center;
-  color: #ff5252; 
+  color: $color-hover; 
 } 
 
 
@@ -150,7 +158,7 @@ p {
 }
 
 #margin-kontakt li {
- padding: .4em;+
+ padding: .4em;
  list-style: none;
 }
 
